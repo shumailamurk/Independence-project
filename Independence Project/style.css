@@ -1,0 +1,197 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+   background-color: rgb(149, 227, 71);
+} 
+
+.balloon {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    bottom: -100px; /* Start below the screen */
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.green {
+    background-color: green;
+}
+
+.white {
+    background-color: green;
+}
+
+/* Thread for balloons */
+.balloon::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100vh); /* Start below the screen */
+    }
+    100% {
+        transform: translateY(-100vh); /* Move to above the screen */
+    }
+}
+
+/* Apply animation to all balloons */
+.balloon {
+    animation: moveUp 9s infinite linear;
+}
+.pol{
+    width: 10px;
+    height: 400px;
+    background-color:rgba(103, 97, 97, 0.606);
+    position: absolute;
+    top: 170px;
+    left: 20px;
+}
+
+h1{
+    color: white;
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-width: 20px 20px 20px 20px;
+    border-style: groove;
+    border-color: rgb(120, 203, 36);
+    border-radius: 15px;
+    font-size: 40px;
+    font-style: italic;
+    
+}
+.paragraph{
+    width: 800px;
+    height: 250px;
+   position: absolute;
+   top: 30%;
+   right: 5%;
+   color: aliceblue;
+   font-style: italic;
+   background-color: black;
+   border-width: 20px 15px 20px 15px;
+   border-style: groove;
+   border-radius: 10px;
+   border-color: rgb(47, 238, 47);
+   line-height: 25px;
+}
+.paragraph img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}
+.paragraph p{
+   text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.flag img{
+    height: 250px;
+    width: 300px;
+}
+.centerimg img{
+    position: absolute;
+    top:90%;
+    right: 44%;
+    height: 450px;
+    width: 650px;
+    border-width: 15px 15px 15px 15px;
+    border-style: groove;
+    border-color: rgb(40, 173, 40);
+    
+}
+.image-menu {
+    /* display: grid; */
+    /* grid-template-columns:repeat(auto-fit,minmax(10rerm,0fr)); */
+    margin:80px;
+display:flex;
+justify-content: space-between;
+ flex-direction: row-reverse; 
+gap: 10px;
+
+}
+
+.snap img{
+    width: 60%;
+    height: 300px;
+    border: 5px solid rgb(148, 173, 98);
+  position: relative;
+margin: 4px 20px;
+border-radius: 30px;
+padding: 20px;
+    top: 40px;
+    /* align-items: center;
+    justify-content: center; */
+    right:30px;
+    background-color: rgb(240, 231, 217);
+}
+.snap img:hover{
+transform:scale(1.2);
+transition: all 1s ease-in;
+}
+.container{
+    background-color:white;
+    color: green;
+    font-style: italic;
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    top: 1020px;
+    left: 20px;
+    border-width: 20px 20px 20px 20px;
+    border-style: dashed;
+    border-color: green;
+    border-radius: 15px;
+}
+.container p{
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+}
+.container img{
+    width: 250px;
+    height: 250px;
+    justify-content: center;
+    position: absolute;
+    left: 160px;
+    
+}
+.lastimg img{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+   top: 1550px;
+   left: 70px;
+   border-width: 10px 10px 10px 10px;
+   border-radius: 15px;
+   border-style: dotted;
+   border-color: rgb(54, 64, 44);
+}
+footer{
+    width: 97%;
+    height: 100px;
+    color:white;
+    border-width: 15px 15px 15px 15px;
+    border-radius: 7px;
+    border-style: ridge;
+    border-color: rgb(83, 211, 83);
+    background-color: rgb(26, 21, 21);
+    border-radius: 20px;
+
+}
+footer p{
+    margin: 20px;
+}
